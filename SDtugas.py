@@ -25,8 +25,9 @@ def main():
                     arr[a][b] = num
                     num += 1
             return arr
-        
+
         n = int(input("Masukkan Banyak Elemen: "))
+        garis()
         hasil = ut(n)
         print("Upper Trigular Array")
 
@@ -44,6 +45,7 @@ def main():
             return arr
         
         n = int(input("Masukkan Banyak Elemen: "))
+        garis()
         hasil = ut(n)
         print("Lower Trigular Array")
 
@@ -73,6 +75,7 @@ def main():
         a = int(input("Masukkan Banyak Elemen Baris: "))
         b = int(input("Masukkan Banyak Elemen Kolom: "))
         spArr = SparseArray(a,b)
+        garis()
         spArr.set_value(7, 6, 2)
         spArr.set_value(5, 2, 3)
         spArr.set_value(2, 5, 8)
