@@ -1,3 +1,5 @@
+# Revisi Tugas Kelompok Struktur Data
+# Kelompok 4
 import sys as prog
 
 def garis():
