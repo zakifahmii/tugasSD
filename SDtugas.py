@@ -72,14 +72,25 @@ def main():
                         print(self.get_value(i, j), end=' ')
                     print()
         
-        a = int(input("Masukkan Banyak Elemen Baris: "))
-        b = int(input("Masukkan Banyak Elemen Kolom: "))
-        spArr = SparseArray(a,b)
+        x = int(input("Masukkan Banyak Elemen Baris: "))
+        y = int(input("Masukkan Banyak Elemen Kolom: "))
+        spArr = SparseArray(x,y)
         garis()
-        spArr.set_value(7, 6, 2)
-        spArr.set_value(5, 2, 3)
-        spArr.set_value(2, 5, 8)
-        spArr.set_value(1, 2, 6)
+        print("Masukkan 3 angka kedalam 4 value!")
+        matriks = []
+        for i in range(x):
+            row = []
+            for j in range(y):
+                elemen = int(input(f"Masukkan elemen matriks [{i}][{j}]: "))
+                row.append(elemen)
+            matriks.append(row)
+
+        # Menampilkan matriks
+        print("Matriks yang diinput:")
+        for row in matriks:
+            print(row)
+        
+        # spArr.set_value(matriks)
         spArr.print_array()
         
 while True: 
